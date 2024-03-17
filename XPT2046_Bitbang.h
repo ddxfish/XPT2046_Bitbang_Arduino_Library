@@ -4,8 +4,14 @@
 #include "Arduino.h"
 #include <SPIFFS.h>
 
-#define TFT_HEIGHT 320
+
+#ifndef TFT_WIDTH
 #define TFT_WIDTH 240
+#endif
+
+#ifndef TFT_HEIGHT
+#define TFT_HEIGHT 320
+#endif
 
 struct Point {
     int x;
