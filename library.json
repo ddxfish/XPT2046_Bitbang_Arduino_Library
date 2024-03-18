@@ -1,6 +1,6 @@
 {
   "name": "XPT2046_Bitbang",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": "Arduino, ESP32, CYD, touchscreen",
   "description": "This library provides a software-based SPI (bitbang) approach to interface with the XPT2046 touch screen controller. It allows for touch detection, calibration, and touch coordinate retrieval.",
   "repository":
