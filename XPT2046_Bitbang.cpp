@@ -94,6 +94,13 @@ void XPT2046_Bitbang::saveCalibration() {
     calFile.close();
 }
 
+void XPT2046_Bitbang::setCalibration(int xMin, int yMin, int xMax, int yMax) {
+    cal.xMin = xMin;
+    cal.yMin = yMin;
+    cal.xMax = xMax;
+    cal.yMax = yMax;
+}
+
 Point XPT2046_Bitbang::getTouch() {
     digitalWrite(_csPin, LOW);
     int x = readSPI(CMD_READ_X);
