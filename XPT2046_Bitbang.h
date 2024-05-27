@@ -26,6 +26,7 @@ public:
     void calibrate();
     bool loadCalibration();
     void saveCalibration();
+    void setCalibration(int xMin, int yMin, int xMax, int yMax);
 
 private:
     uint8_t _mosiPin;
